@@ -15,21 +15,21 @@ use Illuminate\Support\Facades\Route;
 // rotta per la pagina dei fumetti
 Route::get('/', function () {
     $title = 'Fumetti';
-    return view('index', compact('title'));
+    return view('products.index', compact('title'));
 })->name('index');
 
 // rotta per la pagina dei personaggi
 Route::get('/characters', function () {
     $title = 'characters';
-    return view('characters', compact('characters') );
+    return view('characters', compact('title') );
 })->name('characters');
 // rotta per la pagina dei film
 Route::get('/movies', function () {
     $title = 'film';
-    return view('movies',compact('film'));
+    return view('movies',compact('title'));
 })->name('movies');
 // rotta per la pagina dei prodotti per la tv
 Route::get('/tv', function () {
     $title = 'tv';
-    return view('tv', compact('film'));
+    return view('tv', compact('title'));
 })->name('tv');

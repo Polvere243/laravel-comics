@@ -14,34 +14,34 @@
             <nav>
                 <ul>
                     <li>
-                        <a :href="{{ route('index') }}">CHARACTERS</a>
+                        <a href="{{ route('characters') }}">CHARACTERS</a>
                     </li>
                     <li>
-                        <a :href="{{ route('index') }}">COMICS</a>
+                        <a href="{{ url('/') }}">COMICS</a>
                     </li>
                     <li>
-                        <a :href="{{ route('index') }}">MOVIES</a>
+                        <a href="{{ route('movies') }}">MOVIES</a>
                     </li>
                     <li>
-                        <a :href="{{ route('index') }}">TV</a>
+                        <a href="{{ route('tv') }}">TV</a>
                     </li>
                     <li>
-                        <a :href="{{ route('index') }}">GAMES</a>
+                        <a href="{{ route('index') }}">GAMES</a>
                     </li>
                     <li>
-                        <a :href="{{ route('index') }}">COLLECTIBLES</a>
+                        <a href="{{ route('index') }}">COLLECTIBLES</a>
                     </li>
                     <li>
-                        <a :href="{{ route('index') }}">VIDEOS</a>
+                        <a href="{{ route('index') }}">VIDEOS</a>
                     </li>
                     <li>
-                        <a :href="{{ route('index') }}">FANS</a>
+                        <a href="{{ route('index') }}">FANS</a>
                     </li>
                     <li>
-                        <a :href="{{ route('index') }}">NEWS</a>
+                        <a href="{{ route('index') }}">NEWS</a>
                     </li>
                     <li>
-                        <a :href="{{ route('index') }}">SHOP<i class="fas fa-sort-down"></i></a>
+                        <a href="{{ route('index') }}">SHOP<i class="fas fa-sort-down"></i></a>
                     </li>
                 </ul>
             </nav>
