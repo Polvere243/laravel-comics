@@ -52,19 +52,20 @@
 
 figure {
     text-align: center;
-
-    figcaption {
-        width: 100%;
-        text-align: left;
-        margin-top: 10px;
-
-        h4 {
-            color: white;
-            font-size: 14px;
-        }
-    }
+    height: 200px;
+    overflow: hidden;
 }
 
+figcaption {
+    width: 100%;
+    text-align: left;
+    margin-top: 10px;
+
+    h4 {
+        color: white;
+        font-size: 14px;
+    }
+}
 
 
 /* pulsante */
