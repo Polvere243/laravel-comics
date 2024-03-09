@@ -53,32 +53,32 @@
                     <ul class="links-pic">
                         <li>
                             <a href="#">
-                                <img src="../assets/assets-vue-dc-comics-1/img/buy-comics-digital-comics.png" alt="kindle">
+                                <img src="{{ Vite::asset('resources/img/buy-comics-digital-comics.png') }}" alt="kindle">
                                 <h4>DIGITAL COMICS</h4>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="../assets/assets-vue-dc-comics-1/img/buy-comics-merchandise.png" alt="maglietta">
+                                <img src="{{ Vite::asset('resources/img/buy-comics-merchandise.png') }}" alt="maglietta">
                                 <h4>DC MERCHANDISE</h4>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="../assets/assets-vue-dc-comics-1/img/buy-comics-shop-locator.png" alt="tessere">
+                                <img src="{{ Vite::asset('resources/img/buy-comics-subscriptions.png') }}" alt="tessere">
                                 <h4>SUBSCRIPTION</h4>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="../assets/assets-vue-dc-comics-1/img/buy-comics-subscriptions.png"
+                                <img src="{{ Vite::asset('resources/img/buy-comics-shop-locator.png') }}"
                                     alt="icona della posizione">
                                 <h4>COMIC SHOP LOCATOR</h4>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img class="visa" src="../assets/assets-vue-dc-comics-1/img/buy-dc-power-visa.svg" alt="carta visa">
+                                <img class="visa" src="{{ Vite::asset('resources/img/buy-dc-power-visa.svg') }}" alt="carta visa">
                                 <h4>DC POWER VISA</h4>
                             </a>
                         </li>
@@ -245,29 +245,29 @@
                         <ul class="links-list">
                             <li>
                                 <a href="#">
-                                    <img src="../assets/assets-vue-dc-comics-1/img/footer-facebook.png"
+                                    <img src="{{ Vite::asset('resources/img/footer-f.png') }}"
                                         alt="logo di facebook" />
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <img src="../assets/assets-vue-dc-comics-1/img/footer-twitter.png" alt="logo di twitter" />
+                                    <img src="{{ Vite::asset('resources/img/footer-twitter.png') }}" alt="logo di twitter" />
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <img src="../assets/assets-vue-dc-comics-1/img/footer-youtube.png" alt="logo di youtube" />
+                                    <img src="{{ Vite::asset('resources/img/footer-youtube.png') }}" alt="logo di youtube" />
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <img src="../assets/assets-vue-dc-comics-1/img/footer-pinterest.png"
+                                    <img src="{{ Vite::asset('resources/img/footer-pinterest.png') }}"
                                         alt="logo di pinterest" />
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <img src="../assets/assets-vue-dc-comics-1/img/footer-periscope.png"
+                                    <img src="{{ Vite::asset('resources/img/footer-periscope.png') }}"
                                         alt="logo di periscope" />
                                 </a>
                             </li>
