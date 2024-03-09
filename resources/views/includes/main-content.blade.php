@@ -2,7 +2,8 @@
     <div class="container">
         <button class="series">CURRENT SERIES</button>
         <div class="row">
-            <div class="card" v-for="(comic, i) in comics" :key="i">
+            
+            <div class="card">
                 <figure>
                     <img :src="comic.thumb" :alt="comic.series" />
                     <figcaption>

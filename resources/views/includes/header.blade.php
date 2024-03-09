@@ -13,35 +13,35 @@
             </figure>
             <nav>
                 <ul>
-                    <li>
-                        <a href="{{ route('characters') }}">CHARACTERS</a>
+                    <li class="{{ request()->routeIs('characters') ? 'active' : ''}}">
+                        <a  href="{{ route('characters') }}">CHARACTERS</a>
                     </li>
-                    <li>
-                        <a href="{{ url('/') }}">COMICS</a>
+                    <li class="{{ request()->routeIs('index') ? 'active' : ''}}">
+                        <a  href="{{ route('index') }}">COMICS</a>
                     </li>
-                    <li>
-                        <a href="{{ route('movies') }}">MOVIES</a>
+                    <li class="{{ request()->routeIs('movies') ? 'active' : ''}}">
+                        <a  href="{{ route('movies') }}">MOVIES</a>
                     </li>
-                    <li>
-                        <a href="{{ route('tv') }}">TV</a>
+                    <li class="{{ request()->routeIs('tv') ? 'active' : ''}}">
+                        <a  href="{{ route('tv') }}">TV</a>
                     </li>
-                    <li>
-                        <a href="{{ route('index') }}">GAMES</a>
+                    <li class="{{ request()->routeIs('') ? 'active' : ''}}">
+                        <a  href="{{ route('index') }}">GAMES</a>
                     </li>
-                    <li>
-                        <a href="{{ route('index') }}">COLLECTIBLES</a>
+                    <li class="{{ request()->routeIs('') ? 'active' : ''}}">
+                        <a  href="{{ route('index') }}">COLLECTIBLES</a>
                     </li>
-                    <li>
-                        <a href="{{ route('index') }}">VIDEOS</a>
+                    <li class="{{ request()->routeIs('') ? 'active' : ''}}">
+                        <a  href="{{ route('index') }}">VIDEOS</a>
                     </li>
-                    <li>
-                        <a href="{{ route('index') }}">FANS</a>
+                    <li class="{{ request()->routeIs('') ? 'active' : ''}}">
+                        <a  href="{{ route('index') }}">FANS</a>
                     </li>
-                    <li>
-                        <a href="{{ route('index') }}">NEWS</a>
+                    <li class="{{ request()->routeIs('') ? 'active' : ''}}">
+                        <a  href="{{ route('index') }}">NEWS</a>
                     </li>
-                    <li>
-                        <a href="{{ route('index') }}">SHOP<i class="fas fa-sort-down"></i></a>
+                    <li class="{{ request()->routeIs('') ? 'active' : ''}}">
+                        <a  href="{{ route('index') }}">SHOP<i class="fas fa-sort-down"></i></a>
                     </li>
                 </ul>
             </nav>
