@@ -2,15 +2,16 @@
     <div class="container">
         <button class="series">CURRENT SERIES</button>
         <div class="row">
-            
+            @foreach ($comics as $comic)
             <div class="card">
                 <figure>
-                    <img :src="comic.thumb" :alt="comic.series" />
-                    <figcaption>
-                        <h4></h4>
-                    </figcaption>
+                    <img src="{{$comic['thumb']}}" alt="{{$comic['title']}}" />
                 </figure>
+                <figcaption>
+                    <h4>{{ $comic['title'] }}</h4>
+                </figcaption>
             </div>
+            @endforeach
         </div>
         <div class="btn-box">
             <button class="more">

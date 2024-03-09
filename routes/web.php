@@ -15,7 +15,8 @@ use Illuminate\Support\Facades\Route;
 // rotta per la pagina dei fumetti
 Route::get('/', function () {
     $title = 'Fumetti';
-    return view('products.index', compact('title'));
+    $comics = config('comics');
+    return view('products.index', compact('title', 'comics'));
 })->name('index');
 
 // rotta per la pagina dei personaggi
