@@ -1,5 +1,5 @@
 /* generico */
-header {
+.header-content {
     height: 80px;
     max-width: 1080px;
     margin: 0 auto;
@@ -17,6 +17,31 @@ nav ul {
     align-items: center;
     gap: 20px;
     height: 100%;
+}
+
+/* utili */
+
+.top-background {
+    background-color: dodgerblue;
+}
+
+/* Contenitore in cima alla pagina */
+
+.top-page {
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 40px;
+    max-width: 1080px;
+    margin: 0 auto;
+
+    span {
+        font-size: 14px;
+        color: white;
+        font-weight: 500;
+
+    }
 }
 
 /* immagine fluida */
@@ -47,6 +72,25 @@ nav ul li {
     }
 }
 
+/* modulo */
+
+form {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    input {
+        border: none;
+        border-bottom: 2px solid dodgerblue;
+    }
+
+    .fa-magnifying-glass {
+        position: absolute;
+        top: 40px;
+        right: 0;
+        transform: translateY(-50%);
+    }
+}
 
 
 
