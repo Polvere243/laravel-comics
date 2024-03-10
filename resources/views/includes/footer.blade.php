@@ -1,4 +1,5 @@
 <footer>
+    @if(!request()->routeIs('show'))
         <FooterBar>
             <section id="shop-sections">
                 <ul class="links-pic">
@@ -36,6 +37,7 @@
                 </ul>
             </section>
         </FooterBar>
+    @endif
         <section id="site-links">
             <div class="lists-row">
                 <div>
