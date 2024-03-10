@@ -31,6 +31,44 @@
         </div>
         
     </div>
+    <div class="tables">
+        <h3></h3>
+        <table>
+            <tr>
+                <td>Art by:</td>
+                <td>
+                    @foreach($comic['artists'] as $artist)
+                    <span>{{$artist}},</span>
+                    @endforeach
+                </td>
+            </tr>
+            <tr>
+                <td>Written by:</td>
+                <td>
+                @foreach($comic['writers'] as $writer)
+                    <span>{{$writer}},</span>
+                    @endforeach
+                </td>
+            </tr>
+        </table>
+
+        <h3></h3>
+        <table>
+            <tr>
+                <td>Series</td>
+                <td>{{$comic['series']}}</td>
+            </tr>
+            <tr>
+                <td>U.S. Price:</td>
+                <td>{{$comic['price']}}</td>
+            </tr>
+            <tr>
+                <td>On Sale Date:</td>
+                <td>{{$comic['sale_date']}}</td>
+            </tr>
+        </table>
+
+    </div>
 </section>
 
 @endsection
