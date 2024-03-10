@@ -20,6 +20,13 @@ Route::get('/', function () {
     return view('products.index', compact('title', 'comics'));
 })->name('index');
 
+// rotta per la pagina del singolo prodotto
+Route::get('/show', function () {
+   
+    return view('products.show');
+})->name('show');
+
+
 // rotta per la pagina dei personaggi
 Route::get('/characters', function () {
     $title = 'characters';
@@ -50,7 +57,7 @@ Route::get('/collectibles', function () {
     return view('collectibles', compact('title'));
 })->name('collectibles');
 
-// rotta per la pagina dei vidvideos
+// rotta per la pagina dei video
 Route::get('/videos', function () {
     $title = 'videos';
     return view('videos', compact('title'));
@@ -73,5 +80,6 @@ Route::get('/shop', function () {
     $title = 'shop';
     return view('shop', compact('title'));
 })->name('shop');
+
 
 
