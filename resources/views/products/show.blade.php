@@ -42,7 +42,7 @@
                     <td>Art by:</td>
                     <td>
                         @foreach($comic['artists'] as $artist)
-                            <span>{{$artist}},</span>
+                            <span class="dodgerblue">{{$artist}},</span>
                         @endforeach
                     </td>
                 </tr>
@@ -50,7 +50,7 @@
                     <td>Written by:</td>
                     <td>
                         @foreach($comic['writers'] as $writer)
-                            <span>{{$writer}},</span>
+                            <span class="dodgerblue">{{$writer}},</span>
                         @endforeach
                     </td>
                 </tr>
@@ -62,7 +62,7 @@
             <table>
                 <tr>
                     <td>Series</td>
-                    <td>{{$comic['series']}}</td>
+                    <td class="dodgerblue capital">{{$comic['series']}}</td>
                 </tr>
                 <tr class="tr-border">
                     <td>U.S. Price:</td>
