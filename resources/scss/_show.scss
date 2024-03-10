@@ -44,6 +44,16 @@
     padding: 10px;
 }
 
+.basis {
+    flex-basis: 50%;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.r-border {
+    border-right: 2px solid lightgray;
+}
+
 // contenitore della pagina-dettaglio
 #comic-detail {
     max-width: 900px;
@@ -104,10 +114,7 @@
             margin-bottom: 100px;
         }
 
-        .basis {
-            flex-basis: 50%;
-            width: 100%;
-        }
+
 
         h3 {
             margin-bottom: 20px;
@@ -138,6 +145,7 @@
         li {
             width: 100%;
             padding: 10px;
+            border-left: 2px solid lightgray;
 
             h5 {
                 color: rgb(163, 159, 159);

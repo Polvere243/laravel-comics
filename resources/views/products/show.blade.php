@@ -90,7 +90,7 @@
                     <h5>COMIC SHOP LOCATOR</h5>
                     <img src="{{ Vite::asset('resources/img/buy-comics-shop-locator.png') }}" alt="">
                 </li>
-                <li>
+                <li class="r-border">
                     <h5>SUBSCRIPTIONS</h5>
                     <img src="{{ Vite::asset('resources/img/buy-comics-subscriptions.png') }}" alt="">
                 </li>
