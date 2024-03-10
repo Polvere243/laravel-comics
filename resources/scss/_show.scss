@@ -7,14 +7,22 @@
     figure {
         position: absolute;
         top: 0;
-        left: 10px;
-        transform: translateY(-70%)
+        left: 198px;
+        transform: translateY(-85%);
+
+
+        img {
+            height: 180px;
+            max-width: 200px;
+        }
     }
 }
 
 
 // contenitore della pagina-dettaglio
 #comic-detail {
-    max-width: 1080px;
+    max-width: 900px;
     margin: 0 auto;
+    border: 1px solid red;
+    min-height: 50px;
 }
