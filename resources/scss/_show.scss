@@ -119,6 +119,34 @@
         }
     }
 
+    .list-container {
+        max-width: 900px;
+        margin: 0 auto;
+        border-top: 2px solid lightgray;
+    }
 
-    ;
+    ul,
+    li {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+
+        li {
+            width: 100%;
+            padding: 10px;
+
+            h5 {
+                color: rgb(163, 159, 159);
+            }
+
+            img {
+                max-width: 100%;
+                height: 50px;
+
+            }
+        }
+    }
+
+
 }

@@ -26,7 +26,7 @@
         <div class="adv">
             <h5>ADVERTISEMENT</h5>
             <figure>
-                <img class="adv-picture" src="{{ Vite::asset('resources/img/adv.jpg') }}" alt="">
+                <img class="adv-picture" src="{{ Vite::asset('resources/img/adv.jpg') }}""{{ Vite::asset('resources/img/adv.jpg') }}" alt="">
             </figure>
         </div>
         
@@ -42,15 +42,15 @@
                     <td>Art by:</td>
                     <td>
                         @foreach($comic['artists'] as $artist)
-                        <span>{{$artist}},</span>
+                            <span>{{$artist}},</span>
                         @endforeach
                     </td>
                 </tr>
                 <tr>
                     <td>Written by:</td>
                     <td>
-                    @foreach($comic['writers'] as $writer)
-                        <span>{{$writer}},</span>
+                        @foreach($comic['writers'] as $writer)
+                            <span>{{$writer}},</span>
                         @endforeach
                     </td>
                 </tr>
@@ -74,7 +74,26 @@
                 </tr>
             </table>
         </div>
-        
+    </div>
+    <div class="list-container">
+        <ul>
+            <li>
+                <h5>DIGITAL COMICS</h5>
+                <img src="{{ Vite::asset('resources/img/buy-comics-digital-comics.png') }}" alt="">
+            </li>
+            <li>
+                <h5>SHOP DC</h5>
+                <img src="{{ Vite::asset('resources/img/buy-comics-merchandise.png') }}" alt="">
+            </li>
+            <li>
+                <h5>COMIC SHOP LOCATOR</h5>
+                <img src="{{ Vite::asset('resources/img/buy-comics-shop-locator.png') }}" alt="">
+            </li>
+            <li>
+                <h5>SUBSCRIPTIONS</h5>
+                <img src="{{ Vite::asset('resources/img/buy-comics-subscriptions.png') }}" alt="">
+            </li>
+        </ul>
     </div>
     
 
