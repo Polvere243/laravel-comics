@@ -1,7 +1,9 @@
 @extends('layouts.main')
 
+@section('title', 'Fumetto')
+
 @section('main')
 
-<h1>Prodotto</h1>
+@dd($comic)
 
 @endsection

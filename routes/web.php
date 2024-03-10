@@ -22,8 +22,8 @@ Route::get('/', function () {
 
 // rotta per la pagina del singolo prodotto
 Route::get('/show', function () {
-   
-    return view('products.show');
+    $comics = config('comics');
+    return view('products.show', ['comic' => $comics[0]]);
 })->name('show');
 
 
