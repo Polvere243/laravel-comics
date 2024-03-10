@@ -4,13 +4,16 @@
         <div class="row">
             @foreach ($comics as $comic)
             <div class="card">
-                <figure>
-                    <img src="{{$comic['thumb']}}" alt="{{$comic['title']}}" />
-                </figure>
-                <figcaption>
-                    <h4>{{ $comic['title'] }}</h4>
-                </figcaption>
+                <a href="{{ route('show') }}">
+                    <figure>
+                        <img src="{{$comic['thumb']}}" alt="{{$comic['title']}}" />
+                    </figure>
+                    <figcaption>
+                        <h4>{{ $comic['title'] }}</h4>
+                    </figcaption>
+                </a>
             </div>
+            
             @endforeach
         </div>
         <div class="btn-box">
