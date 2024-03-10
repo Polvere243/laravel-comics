@@ -75,27 +75,28 @@
             </table>
         </div>
     </div>
-    <div class="list-container">
-        <ul>
-            <li>
-                <h5>DIGITAL COMICS</h5>
-                <img src="{{ Vite::asset('resources/img/buy-comics-digital-comics.png') }}" alt="">
-            </li>
-            <li>
-                <h5>SHOP DC</h5>
-                <img src="{{ Vite::asset('resources/img/buy-comics-merchandise.png') }}" alt="">
-            </li>
-            <li>
-                <h5>COMIC SHOP LOCATOR</h5>
-                <img src="{{ Vite::asset('resources/img/buy-comics-shop-locator.png') }}" alt="">
-            </li>
-            <li>
-                <h5>SUBSCRIPTIONS</h5>
-                <img src="{{ Vite::asset('resources/img/buy-comics-subscriptions.png') }}" alt="">
-            </li>
-        </ul>
+    <div class="border-gray">
+        <div class="list-container">
+            <ul>
+                <li>
+                    <h5>DIGITAL COMICS</h5>
+                    <img src="{{ Vite::asset('resources/img/buy-comics-digital-comics.png') }}" alt="">
+                </li>
+                <li>
+                    <h5>SHOP DC</h5>
+                    <img src="{{ Vite::asset('resources/img/buy-comics-merchandise.png') }}" alt="">
+                </li>
+                <li>
+                    <h5>COMIC SHOP LOCATOR</h5>
+                    <img src="{{ Vite::asset('resources/img/buy-comics-shop-locator.png') }}" alt="">
+                </li>
+                <li>
+                    <h5>SUBSCRIPTIONS</h5>
+                    <img src="{{ Vite::asset('resources/img/buy-comics-subscriptions.png') }}" alt="">
+                </li>
+            </ul>
+        </div>
     </div>
-    
 
 </section>
 @endsection
