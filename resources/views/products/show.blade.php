@@ -1,1 +1,1 @@
-fumetto, seeeeeeee!
+@extends('layouts.main')
