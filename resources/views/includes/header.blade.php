@@ -13,36 +13,11 @@
             </figure>
             <nav>
                 <ul>
-                    <li class="{{ request()->routeIs('characters') ? 'active' : ''}}">
-                        <a  href="{{ route('characters') }}">CHARACTERS</a>
+                @foreach (config('links') as $link)
+                    <li class="{{ request()->routeIs($link['route']) ? 'active' : ''}}">
+                        <a  href="{{ route($link['route']) }}">{{ $link['text'] }}</a>
                     </li>
-                    <li class="{{ request()->routeIs('index') ? 'active' : ''}}">
-                        <a  href="{{ route('index') }}">COMICS</a>
-                    </li>
-                    <li class="{{ request()->routeIs('movies') ? 'active' : ''}}">
-                        <a  href="{{ route('movies') }}">MOVIES</a>
-                    </li>
-                    <li class="{{ request()->routeIs('tv') ? 'active' : ''}}">
-                        <a  href="{{ route('tv') }}">TV</a>
-                    </li>
-                    <li class="{{ request()->routeIs('') ? 'active' : ''}}">
-                        <a  href="{{ route('index') }}">GAMES</a>
-                    </li>
-                    <li class="{{ request()->routeIs('') ? 'active' : ''}}">
-                        <a  href="{{ route('index') }}">COLLECTIBLES</a>
-                    </li>
-                    <li class="{{ request()->routeIs('') ? 'active' : ''}}">
-                        <a  href="{{ route('index') }}">VIDEOS</a>
-                    </li>
-                    <li class="{{ request()->routeIs('') ? 'active' : ''}}">
-                        <a  href="{{ route('index') }}">FANS</a>
-                    </li>
-                    <li class="{{ request()->routeIs('') ? 'active' : ''}}">
-                        <a  href="{{ route('index') }}">NEWS</a>
-                    </li>
-                    <li class="{{ request()->routeIs('') ? 'active' : ''}}">
-                        <a  href="{{ route('index') }}">SHOP<i class="fas fa-sort-down"></i></a>
-                    </li>
+                @endforeach    
                 </ul>
             </nav>
             <form action="">
