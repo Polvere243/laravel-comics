@@ -2,9 +2,9 @@
     <div class="container">
         <button class="series">CURRENT SERIES</button>
         <div class="row">
-            @foreach ($comics as $comic)
+            @foreach ($comics as $index => $comic)
             <div class="card">
-                <a href="{{ route('show') }}">
+                <a href="{{ route('products.show', ['index' => $index]) }}">
                     <figure>
                         <img src="{{$comic['thumb']}}" alt="{{$comic['title']}}" />
                     </figure>

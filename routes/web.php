@@ -18,13 +18,17 @@ Route::get('/', function () {
     $comics = config('comics');
     
     return view('products.index', compact('title', 'comics'));
-})->name('index');
+})->name('products.index');
 
 // rotta per la pagina del singolo prodotto
-Route::get('/show', function () {
+Route::get('/comics/{index}', function ($index) {
+    
+    if(!is_numeric($index) || $index < 0 || $index >= count(config('comics'))){
+        abort(404);
+    }
     $comics = config('comics');
-    return view('products.show', ['comic' => $comics[0]]);
-})->name('show');
+    return view('products.show', ['comic' => $comics[$index]]);
+})->name('products.show');
 
 
 // rotta per la pagina dei personaggi
